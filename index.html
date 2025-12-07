@@ -14,8 +14,55 @@
         </div>
     </header>
     <main>
+        <section class="hero">
+            <h1>CommuCode</h1>
+            <p class="tagline">The future of open-source gaming</p>
+            <p class="description">An open-source gaming platform run by the community, for the community. Build, play, and create together.</p>
+            <div class="download-buttons">
+                <button class="btn btn-primary" onclick="downloadOS('windows')">📥 Download for Windows</button>
+        </section>
+        
+        <section class="features">
+            <h2>Why Choose CommuCode?</h2>
+            <div class="features-grid">
+                <div class="feature-card">
+                    <h3>🎮 Open Source</h3>
+                    <p>Fully open-source. See the code, contribute, and shape the platform's future.</p>
+                </div>
+                <div class="feature-card">
+                    <h3>👥 Community-Driven</h3>
+                    <p>Built by creators, for creators. Your voice matters in our development.</p>
+                </div>
+                <div class="feature-card">
+                    <h3>🚀 High Performance</h3>
+                    <p>Native app runtime delivers richer experiences than browser-only platforms.</p>
+                </div>
+                <div class="feature-card">
+                    <h3>🛠️ Creator Tools</h3>
+                    <p>Intuitive tools to design, build, and publish your games to millions.</p>
+                </div>
+                <div class="feature-card">
+                    <h3>📱 Multi-Platform</h3>
+                    <p>Play on desktop, mobile, and more. Create once, deploy everywhere.</p>
+                </div>
+                <div class="feature-card">
+                    <h3>🔒 Your Content</h3>
+                    <p>You own your games and assets. No corporate lock-in or surprise takedowns.</p>
+                </div>
+            </div>
+        </section>
     </main>
     <footer>
         <p>&copy; 2025 CommuCode. All rights reserved.</p>
     </footer>
+    <script>
+        function downloadOS(os) {
+            const urls = {
+                windows: 'https://github.com/Lucas6412f1/CommuCode-site/releases/download/v0.1.0/CommuCode-Windows.exe',
+            };
+            if (urls[os]) {
+                window.location.href = urls[os];
+            }
+        }
+    </script>
 </html>
